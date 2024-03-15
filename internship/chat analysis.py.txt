@@ -70,7 +70,7 @@ def visualize_sentiment_distribution(sentiments):
     sentiment_counts = pd.Series(sentiments).value_counts()
     labels = sentiment_counts.index
     sizes = sentiment_counts.values
-    colors = ['red', 'blue', 'green']
+    colors = ['pink','skyblue', 'red']
     plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
     plt.axis('equal')
     plt.title('Sentiment Distribution')
